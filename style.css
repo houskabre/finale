@@ -11,7 +11,7 @@ body {
 
 .members-count,
 .members-list {
-  border: 1px 
+  border: 1px;
   padding: 15px;
   margin-bottom: 15px;
 }
@@ -19,6 +19,7 @@ body {
   border: 2px solid #e4e4e4;
   padding: 15px;
   margin-bottom: 15px;
+  min-height: 400px;
 }
 .members-count {
   color: #00ffff;
@@ -26,25 +27,42 @@ body {
 .messages {
   flex-shrink: 1;
   overflow: auto;
-  color: #00ffff;
 }
 
 .message {
-  padding: 5px 0;
+  background-color: #e4e4e4;
+  max-width: 200px;
+  padding: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: red;
 }
 .message .member {
-  display: inline-block;
+  display: flex;
 }
 
 .member {
-  padding-right: 10px;
   position: relative;
   color: #00ffff;
+  font-weight: 700;
 }
 
 .message-form {
   display: flex;
   flex-shrink: 0;
+}
+.message-mine {
+  background-color: #8bc34a;
+  color: #fff;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-left: auto;
+  text-align: right;
 }
 .message-form__input {
   flex-grow: 1;
